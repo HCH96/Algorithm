@@ -1,4 +1,4 @@
-#include "global.h"
+#include "pch.h"
 
 class Solution_1
 {

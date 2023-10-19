@@ -1,12 +1,6 @@
 #pragma once
 
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
-
-using namespace std;
+#include "pch.h"
 
 class Solution_819 
 {

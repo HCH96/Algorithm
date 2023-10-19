@@ -1,9 +1,6 @@
 #pragma once
 
-#include <string>
-#include <ctype.h>
-
-using namespace std;
+#include "pch.h"
 
 class Solution_125
 {

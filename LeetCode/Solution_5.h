@@ -1,6 +1,6 @@
 #pragma once
 
-#include "global.h"
+#include "pch.h"
 
 class Solution_5
 {

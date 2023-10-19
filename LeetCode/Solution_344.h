@@ -1,8 +1,5 @@
 #pragma once
-
-#include <vector>
-
-using namespace std;
+#include "pch.h"
 
 class Solution {
 public:

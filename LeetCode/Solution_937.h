@@ -1,10 +1,6 @@
 #pragma once
 
-#include <vector>
-#include <algorithm>
-#include <string>
-
-using namespace std;
+#include "pch.h"
 
 class Solution937
 {
