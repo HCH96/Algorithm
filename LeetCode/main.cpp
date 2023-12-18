@@ -6,15 +6,32 @@
 
 
 
-int main()
+#include <iostream>
+#include <queue>
+#include <tuple>
+
+using namespace std;
+
+struct cmp
 {
-	// tickets =	[["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
+    bool operator()(const pair<int, int>& a, const pair<int, int>& b) {
+        return a.second < b.second;
+    }
+};
 
-	vector<vector<string>> tickets = {{"JFK","SFO"}, {"JFK", "ATL"}, {"SFO", "ATL"},{"ATL", "JFK"},{"ATL", "SFO"} };
+int main() {
+    priority_queue<pair<int,int>, vector<pair<int, int>>, cmp> pq;
 
-	Solution s;
+    pq.push({ 1,5 });
+    pq.push({ 2,2 });
+    pq.push({ 3,1 });
 
-	s.findItinerary(tickets);
 
-	return 0;
+    while (!pq.empty()) {
+        pair<int, int> top = pq.top();
+        pq.pop();
+        cout << "(" << top.first << ", " << top.second << ")";
+    }
+
+    return 0;
 }
