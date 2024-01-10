@@ -1,12 +1,16 @@
-#include "pch.h"
-#include <iostream>
+#pragma once
+
+#include <string>
+#include <vector>
+#include <queue>
+
 
 using namespace std;
 
 string solution(int n, int t, int m, vector<string> timetable) {
     string answer = "";
 
-    priority_queue<int,vector<int>,greater<int>> pq;
+    priority_queue<int, vector<int>, greater<int>> pq;
     int last = 540;
 
     for (int i = 0; i < timetable.size(); ++i)
@@ -33,16 +37,23 @@ string solution(int n, int t, int m, vector<string> timetable) {
         }
     }
 
+    last -= 1;
+
+    answer += to_string(last / 60);
+
+    if (answer.size() == 1)
+    {
+        answer.insert(answer.begin(), '0');
+    }
+
+    answer += ':';
+
+    if (10 > last % 60)
+    {
+        answer += '0';   
+    }
+
+    answer += to_string(last % 60);
+
     return answer;
 }
-
-
-int main() {
-    vector<string> cities = { "09:10", "09:09", "08:00" };
-    
-
-    solution(2,10,2,cities);
-
-    return 0;
-}
-
