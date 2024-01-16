@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="week1">
+      <UniqueIdentifier>{3d26587d-f651-4420-80d0-9d535ad76191}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Solution_14501.h">
+      <Filter>week1</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1026.h">
+      <Filter>week1</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
