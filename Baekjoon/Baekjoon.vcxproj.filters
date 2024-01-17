@@ -21,5 +21,8 @@
     <ClInclude Include="Solution_1931.h">
       <Filter>week1</Filter>
     </ClInclude>
+    <ClInclude Include="Solution_2251.h">
+      <Filter>week1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
