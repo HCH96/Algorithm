@@ -4,6 +4,7 @@ using namespace std;
 
 typedef long long ll;
 
+int N, M;
 
 int main()
 {
