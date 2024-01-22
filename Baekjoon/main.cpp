@@ -6,6 +6,7 @@ typedef long long ll;
 
 int N, M;
 
+
 int main()
 {
 	ios::sync_with_stdio(0);
