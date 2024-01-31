@@ -10,6 +10,9 @@
     <Filter Include="week2">
       <UniqueIdentifier>{28c78c55-eb69-4081-9129-2dd6e66687c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="week3">
+      <UniqueIdentifier>{9744889d-3053-4400-a3cb-beffea925281}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution_14501.h">
@@ -53,6 +56,9 @@
     </ClInclude>
     <ClInclude Include="Solution_2661.h">
       <Filter>week2</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2606.h">
+      <Filter>week3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

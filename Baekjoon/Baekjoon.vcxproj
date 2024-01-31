@@ -146,6 +146,7 @@
     <ClInclude Include="Solution_1987.h" />
     <ClInclude Include="Solution_2251.h" />
     <ClInclude Include="Solution_2583.h" />
+    <ClInclude Include="Solution_2606.h" />
     <ClInclude Include="Solution_2661.h" />
     <ClInclude Include="Solution_2805.h" />
   </ItemGroup>
