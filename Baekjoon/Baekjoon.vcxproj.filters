@@ -60,5 +60,20 @@
     <ClInclude Include="Solution_2606.h">
       <Filter>week3</Filter>
     </ClInclude>
+    <ClInclude Include="Solution_21736.h">
+      <Filter>week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1149.h">
+      <Filter>week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1107.h">
+      <Filter>week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_14502.h">
+      <Filter>week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_9663.h">
+      <Filter>week3</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

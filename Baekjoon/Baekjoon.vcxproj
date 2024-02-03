@@ -136,7 +136,10 @@
   <ItemGroup>
     <ClInclude Include="Solution_10026.h" />
     <ClInclude Include="Solution_1026.h" />
+    <ClInclude Include="Solution_1107.h" />
+    <ClInclude Include="Solution_1149.h" />
     <ClInclude Include="Solution_14501.h" />
+    <ClInclude Include="Solution_14502.h" />
     <ClInclude Include="Solution_14890.h" />
     <ClInclude Include="Solution_15686.h" />
     <ClInclude Include="Solution_1697.h" />
@@ -144,11 +147,13 @@
     <ClInclude Include="Solution_1931.h" />
     <ClInclude Include="Solution_1946.h" />
     <ClInclude Include="Solution_1987.h" />
+    <ClInclude Include="Solution_21736.h" />
     <ClInclude Include="Solution_2251.h" />
     <ClInclude Include="Solution_2583.h" />
     <ClInclude Include="Solution_2606.h" />
     <ClInclude Include="Solution_2661.h" />
     <ClInclude Include="Solution_2805.h" />
+    <ClInclude Include="Solution_9663.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
