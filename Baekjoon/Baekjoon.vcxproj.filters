@@ -13,6 +13,9 @@
     <Filter Include="week3">
       <UniqueIdentifier>{9744889d-3053-4400-a3cb-beffea925281}</UniqueIdentifier>
     </Filter>
+    <Filter Include="week4">
+      <UniqueIdentifier>{0e69983e-5816-4d2e-8608-48631ae82f2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution_14501.h">
@@ -77,6 +80,15 @@
     </ClInclude>
     <ClInclude Include="Solution_1865.h">
       <Filter>week3</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2721.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2810.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_14465.h">
+      <Filter>week4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

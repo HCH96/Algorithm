@@ -5,15 +5,13 @@ using namespace std;
 
 typedef long long ll;
 
-int T, N, M, W;
+int T, N, K, B;
 
 
 int main()
 {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-
-	cin >> T;
 
 	return 0;
 }

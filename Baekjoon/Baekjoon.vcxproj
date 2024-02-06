@@ -138,6 +138,7 @@
     <ClInclude Include="Solution_1026.h" />
     <ClInclude Include="Solution_1107.h" />
     <ClInclude Include="Solution_1149.h" />
+    <ClInclude Include="Solution_14465.h" />
     <ClInclude Include="Solution_14501.h" />
     <ClInclude Include="Solution_14502.h" />
     <ClInclude Include="Solution_14890.h" />
@@ -153,7 +154,9 @@
     <ClInclude Include="Solution_2583.h" />
     <ClInclude Include="Solution_2606.h" />
     <ClInclude Include="Solution_2661.h" />
+    <ClInclude Include="Solution_2721.h" />
     <ClInclude Include="Solution_2805.h" />
+    <ClInclude Include="Solution_2810.h" />
     <ClInclude Include="Solution_9663.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
