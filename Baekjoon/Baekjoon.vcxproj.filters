@@ -90,5 +90,35 @@
     <ClInclude Include="Solution_14465.h">
       <Filter>week4</Filter>
     </ClInclude>
+    <ClInclude Include="Solution_11279.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1012.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_9465.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_13335.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_14503.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_7576.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_12865.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_17070.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2110.h">
+      <Filter>week4</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_12851.h">
+      <Filter>week4</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
