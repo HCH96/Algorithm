@@ -40,11 +40,9 @@ int main()
 
 			if (col > 1)
 			{
-				MaxFirst = max(MaxFirst, dp[0][col - 2]);
 				MaxFirst = max(MaxFirst, dp[1][col - 2]);
 
 				MaxSecond = max(MaxSecond, dp[0][col - 2]);
-				MaxSecond = max(MaxSecond, dp[1][col - 2]);
 			}
 
 			dp[0][col] = MaxFirst + v[0][col];
@@ -53,13 +51,9 @@ int main()
 
 		int ans = 0;
 
-		for (int i = N - 2; i < N; ++i)
+		for (int j = 0; j < 2; ++j)
 		{
-			for (int j = 0; j < 2; ++j)
-			{
-				ans = max(ans, dp[j][i]);
-			}
-
+			ans = max(ans, dp[j][N-1]);
 		}
 
 		cout << ans << endl;

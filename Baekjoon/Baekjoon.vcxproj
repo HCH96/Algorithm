@@ -144,6 +144,7 @@
     <ClInclude Include="Solution_12865.h" />
     <ClInclude Include="Solution_13335.h" />
     <ClInclude Include="Solution_14465.h" />
+    <ClInclude Include="Solution_14500.h" />
     <ClInclude Include="Solution_14501.h" />
     <ClInclude Include="Solution_14502.h" />
     <ClInclude Include="Solution_14503.h" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Solution_15686.h" />
     <ClInclude Include="Solution_1697.h" />
     <ClInclude Include="Solution_17070.h" />
+    <ClInclude Include="Solution_17144.h" />
     <ClInclude Include="Solution_1747.h" />
     <ClInclude Include="Solution_1865.h" />
     <ClInclude Include="Solution_1931.h" />
