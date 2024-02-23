@@ -137,11 +137,14 @@
     <ClInclude Include="Solution_10026.h" />
     <ClInclude Include="Solution_1012.h" />
     <ClInclude Include="Solution_1026.h" />
+    <ClInclude Include="Solution_11049.h" />
+    <ClInclude Include="Solution_1106.h" />
     <ClInclude Include="Solution_1107.h" />
     <ClInclude Include="Solution_11279.h" />
     <ClInclude Include="Solution_1149.h" />
     <ClInclude Include="Solution_12851.h" />
     <ClInclude Include="Solution_12865.h" />
+    <ClInclude Include="Solution_1333.h" />
     <ClInclude Include="Solution_13335.h" />
     <ClInclude Include="Solution_14465.h" />
     <ClInclude Include="Solution_14500.h" />
@@ -161,13 +164,16 @@
     <ClInclude Include="Solution_2110.h" />
     <ClInclude Include="Solution_21736.h" />
     <ClInclude Include="Solution_2251.h" />
+    <ClInclude Include="Solution_2512.h" />
     <ClInclude Include="Solution_2583.h" />
     <ClInclude Include="Solution_2606.h" />
     <ClInclude Include="Solution_2661.h" />
     <ClInclude Include="Solution_2721.h" />
+    <ClInclude Include="Solution_2780.h" />
     <ClInclude Include="Solution_2805.h" />
     <ClInclude Include="Solution_2810.h" />
     <ClInclude Include="Solution_7576.h" />
+    <ClInclude Include="Solution_7579.h" />
     <ClInclude Include="Solution_9465.h" />
     <ClInclude Include="Solution_9663.h" />
   </ItemGroup>
