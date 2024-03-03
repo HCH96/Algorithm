@@ -19,6 +19,9 @@
     <Filter Include="week5">
       <UniqueIdentifier>{c9ab4503-8a75-474e-b3dc-9ddc42386a3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="week6">
+      <UniqueIdentifier>{2391eefc-1f3d-41ae-8e1b-5f3578086f3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution_14501.h">
@@ -146,6 +149,33 @@
     </ClInclude>
     <ClInclude Include="Solution_11049.h">
       <Filter>week5</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_10810.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1764.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_11399.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2667.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2156.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2294.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1976.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_2206.h">
+      <Filter>week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1937.h">
+      <Filter>week6</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

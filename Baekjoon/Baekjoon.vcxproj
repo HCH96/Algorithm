@@ -134,6 +134,15 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Solution_10810.h" />
+    <ClInclude Include="Solution_11399.h" />
+    <ClInclude Include="Solution_1764.h" />
+    <ClInclude Include="Solution_1937.h" />
+    <ClInclude Include="Solution_1976.h" />
+    <ClInclude Include="Solution_2156.h" />
+    <ClInclude Include="Solution_2206.h" />
+    <ClInclude Include="Solution_2294.h" />
+    <ClInclude Include="Solution_2667.h" />
     <ClInclude Include="Solution_10026.h" />
     <ClInclude Include="Solution_1012.h" />
     <ClInclude Include="Solution_1026.h" />

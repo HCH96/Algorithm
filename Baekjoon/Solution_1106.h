@@ -43,7 +43,7 @@ int main()
 			}
 			else
 			{
-				maxi = max(dp[i - 1], dp[i]);
+				maxi = dp[i - 1];
 			}
 
 			dp[i] = max(dp[i], maxi);
