@@ -177,5 +177,8 @@
     <ClInclude Include="Solution_1937.h">
       <Filter>week6</Filter>
     </ClInclude>
+    <ClInclude Include="Solution_12015.h">
+      <Filter>week6</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
