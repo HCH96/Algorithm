@@ -130,11 +130,17 @@
     <ClCompile Include="CodingTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Solution_104.h" />
+    <ClInclude Include="Solution_105.h" />
+    <ClInclude Include="Solution_108.h" />
     <ClInclude Include="Solution_17.h" />
     <ClInclude Include="Solution_200.h" />
     <ClInclude Include="Solution_207.h" />
+    <ClInclude Include="Solution_215.h" />
     <ClInclude Include="Solution_46.h" />
+    <ClInclude Include="Solution_543.h" />
     <ClInclude Include="Solution_622.h" />
+    <ClInclude Include="Solution_743.h" />
     <ClInclude Include="Solution_77.h" />
     <ClInclude Include="Solution_771.h" />
   </ItemGroup>

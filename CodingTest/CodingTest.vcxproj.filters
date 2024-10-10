@@ -30,5 +30,23 @@
     <ClInclude Include="Solution_207.h">
       <Filter>LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="Solution_743.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_104.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_543.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_108.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_105.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_215.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
