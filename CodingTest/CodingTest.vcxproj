@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -128,21 +128,44 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CodingTest.cpp" />
+    <ClCompile Include="Solution_242.h" />
+    <ClCompile Include="Solution_349.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Nexto_1.h" />
     <ClInclude Include="Solution_104.h" />
     <ClInclude Include="Solution_105.h" />
     <ClInclude Include="Solution_108.h" />
+    <ClInclude Include="Solution_122.h" />
+    <ClInclude Include="Solution_134.h" />
+    <ClInclude Include="Solution_136.h" />
+    <ClInclude Include="Solution_148.h" />
+    <ClInclude Include="Solution_167.h" />
+    <ClInclude Include="Solution_169.h" />
     <ClInclude Include="Solution_17.h" />
+    <ClInclude Include="Solution_179.h" />
+    <ClInclude Include="Solution_198.h" />
     <ClInclude Include="Solution_200.h" />
     <ClInclude Include="Solution_207.h" />
     <ClInclude Include="Solution_215.h" />
+    <ClInclude Include="Solution_240.h" />
+    <ClInclude Include="Solution_241.h" />
+    <ClInclude Include="Solution_33.h" />
+    <ClInclude Include="Solution_406.h" />
     <ClInclude Include="Solution_46.h" />
+    <ClInclude Include="Solution_509.h" />
+    <ClInclude Include="Solution_53.h" />
     <ClInclude Include="Solution_543.h" />
+    <ClInclude Include="Solution_56.h" />
+    <ClInclude Include="Solution_621.h" />
     <ClInclude Include="Solution_622.h" />
+    <ClInclude Include="Solution_70.h" />
+    <ClInclude Include="Solution_704.h" />
     <ClInclude Include="Solution_743.h" />
+    <ClInclude Include="Solution_75.h" />
     <ClInclude Include="Solution_77.h" />
     <ClInclude Include="Solution_771.h" />
+    <ClInclude Include="Solution_973.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

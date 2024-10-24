@@ -2,10 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="CodingTest.cpp" />
+    <ClCompile Include="Solution_242.h">
+      <Filter>LeetCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution_349.h">
+      <Filter>LeetCode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LeetCode">
       <UniqueIdentifier>{3726e5d0-f7d6-4950-8c81-a1e5a743aaf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="넥토리얼">
+      <UniqueIdentifier>{de570213-4d42-49b7-8312-1ddbae992fc8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +55,69 @@
       <Filter>LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="Solution_215.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_56.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_148.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_179.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_75.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_973.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_704.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_33.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_167.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_240.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_136.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_122.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_406.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_621.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Nexto_1.h">
+      <Filter>넥토리얼</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_134.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_169.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_241.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_509.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_53.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_70.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_198.h">
       <Filter>LeetCode</Filter>
     </ClInclude>
   </ItemGroup>
