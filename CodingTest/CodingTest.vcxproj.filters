@@ -8,6 +8,9 @@
     <ClCompile Include="Solution_349.h">
       <Filter>LeetCode</Filter>
     </ClCompile>
+    <ClCompile Include="야근 지수.h">
+      <Filter>Programmers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LeetCode">
@@ -15,6 +18,12 @@
     </Filter>
     <Filter Include="넥토리얼">
       <UniqueIdentifier>{de570213-4d42-49b7-8312-1ddbae992fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Programmers">
+      <UniqueIdentifier>{70ca2be3-07e0-455d-b3b4-0c48ebf6b318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="백준">
+      <UniqueIdentifier>{34f106f6-0437-47b3-a69d-ffebdda7f43a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +128,36 @@
     </ClInclude>
     <ClInclude Include="Solution_198.h">
       <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="이중우선순위큐.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="단어 변환.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="등굣길.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="2805_나무자르기.h">
+      <Filter>백준</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution_1143.h">
+      <Filter>LeetCode</Filter>
+    </ClInclude>
+    <ClInclude Include="11404_플로이드.h">
+      <Filter>백준</Filter>
+    </ClInclude>
+    <ClInclude Include="11657_타임머신.h">
+      <Filter>백준</Filter>
+    </ClInclude>
+    <ClInclude Include="1197_최소 스패닝 트리.h">
+      <Filter>백준</Filter>
+    </ClInclude>
+    <ClInclude Include="1922_네트워크 연결.h">
+      <Filter>백준</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

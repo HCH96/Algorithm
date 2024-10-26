@@ -130,12 +130,19 @@
     <ClCompile Include="CodingTest.cpp" />
     <ClCompile Include="Solution_242.h" />
     <ClCompile Include="Solution_349.h" />
+    <ClCompile Include="야근 지수.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="11404_플로이드.h" />
+    <ClInclude Include="1197_최소 스패닝 트리.h" />
+    <ClInclude Include="1922_네트워크 연결.h" />
+    <ClInclude Include="2805_나무자르기.h" />
+    <ClInclude Include="Network.h" />
     <ClInclude Include="Nexto_1.h" />
     <ClInclude Include="Solution_104.h" />
     <ClInclude Include="Solution_105.h" />
     <ClInclude Include="Solution_108.h" />
+    <ClInclude Include="Solution_1143.h" />
     <ClInclude Include="Solution_122.h" />
     <ClInclude Include="Solution_134.h" />
     <ClInclude Include="Solution_136.h" />
@@ -166,6 +173,10 @@
     <ClInclude Include="Solution_77.h" />
     <ClInclude Include="Solution_771.h" />
     <ClInclude Include="Solution_973.h" />
+    <ClInclude Include="단어 변환.h" />
+    <ClInclude Include="등굣길.h" />
+    <ClInclude Include="이중우선순위큐.h" />
+    <ClInclude Include="11657_타임머신.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
