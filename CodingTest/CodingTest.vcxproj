@@ -173,8 +173,10 @@
     <ClInclude Include="Solution_77.h" />
     <ClInclude Include="Solution_771.h" />
     <ClInclude Include="Solution_973.h" />
+    <ClInclude Include="단속카메라.h" />
     <ClInclude Include="단어 변환.h" />
     <ClInclude Include="등굣길.h" />
+    <ClInclude Include="숫자게임.h" />
     <ClInclude Include="이중우선순위큐.h" />
     <ClInclude Include="11657_타임머신.h" />
   </ItemGroup>
