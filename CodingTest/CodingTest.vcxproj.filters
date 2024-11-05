@@ -177,6 +177,12 @@
     <ClInclude Include="1922_네트워크 연결.h">
       <Filter>백준</Filter>
     </ClInclude>
+    <ClInclude Include="숫자게임.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="단속카메라.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
     <ClInclude Include="Sol_1.h">
       <Filter>2024 넥토리얼</Filter>
     </ClInclude>
