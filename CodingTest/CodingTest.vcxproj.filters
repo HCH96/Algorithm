@@ -11,6 +11,21 @@
     <ClCompile Include="야근 지수.h">
       <Filter>Programmers</Filter>
     </ClCompile>
+    <ClCompile Include="Sol_2.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClCompile>
+    <ClCompile Include="Sol_3.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClCompile>
+    <ClCompile Include="Sol_4.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClCompile>
+    <ClCompile Include="Sol_6.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClCompile>
+    <ClCompile Include="Sol_5.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="LeetCode">
@@ -24,6 +39,9 @@
     </Filter>
     <Filter Include="백준">
       <UniqueIdentifier>{34f106f6-0437-47b3-a69d-ffebdda7f43a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2024 넥토리얼">
+      <UniqueIdentifier>{f01b29ae-af97-4ad0-a03c-1bb9595d417a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +176,18 @@
     </ClInclude>
     <ClInclude Include="1922_네트워크 연결.h">
       <Filter>백준</Filter>
+    </ClInclude>
+    <ClInclude Include="Sol_1.h">
+      <Filter>2024 넥토리얼</Filter>
+    </ClInclude>
+    <ClInclude Include="기지국 설치.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="베스트 앨범.h">
+      <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="스티커 모으기.h">
+      <Filter>Programmers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

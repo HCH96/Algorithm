@@ -130,6 +130,11 @@
     <ClCompile Include="CodingTest.cpp" />
     <ClCompile Include="Solution_242.h" />
     <ClCompile Include="Solution_349.h" />
+    <ClCompile Include="Sol_2.h" />
+    <ClCompile Include="Sol_3.h" />
+    <ClCompile Include="Sol_4.h" />
+    <ClCompile Include="Sol_5.h" />
+    <ClCompile Include="Sol_6.h" />
     <ClCompile Include="야근 지수.h" />
   </ItemGroup>
   <ItemGroup>
@@ -173,8 +178,12 @@
     <ClInclude Include="Solution_77.h" />
     <ClInclude Include="Solution_771.h" />
     <ClInclude Include="Solution_973.h" />
+    <ClInclude Include="Sol_1.h" />
+    <ClInclude Include="기지국 설치.h" />
     <ClInclude Include="단어 변환.h" />
     <ClInclude Include="등굣길.h" />
+    <ClInclude Include="베스트 앨범.h" />
+    <ClInclude Include="스티커 모으기.h" />
     <ClInclude Include="이중우선순위큐.h" />
     <ClInclude Include="11657_타임머신.h" />
   </ItemGroup>
