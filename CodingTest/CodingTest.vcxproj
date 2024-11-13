@@ -183,6 +183,7 @@
     <ClInclude Include="기지국 설치.h" />
     <ClInclude Include="단어 변환.h" />
     <ClInclude Include="등굣길.h" />
+    <ClInclude Include="불량 사용자.h" />
     <ClInclude Include="숫자게임.h" />
     <ClInclude Include="베스트 앨범.h" />
     <ClInclude Include="스티커 모으기.h" />
