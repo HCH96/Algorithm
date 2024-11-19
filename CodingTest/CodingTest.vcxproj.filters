@@ -43,6 +43,9 @@
     <Filter Include="2024 넥토리얼">
       <UniqueIdentifier>{f01b29ae-af97-4ad0-a03c-1bb9595d417a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="알고스팟">
+      <UniqueIdentifier>{819f79cc-15b8-4af6-ac5d-843d361f07a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution_622.h">
@@ -194,6 +197,15 @@
     </ClInclude>
     <ClInclude Include="스티커 모으기.h">
       <Filter>Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="FESTIVAL.h">
+      <Filter>알고스팟</Filter>
+    </ClInclude>
+    <ClInclude Include="BOGGLE.h">
+      <Filter>알고스팟</Filter>
+    </ClInclude>
+    <ClInclude Include="PICNIC.h">
+      <Filter>알고스팟</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -16,7 +17,7 @@ void Solution(int Count, int idx, const vector<pair<int, int>>& Friend, vector<b
         ++ans;
         return;
     }
-    
+
     for (int i = idx; i < Friend.size(); ++i)
     {
         int First = Friend[i].first;
@@ -27,7 +28,7 @@ void Solution(int Count, int idx, const vector<pair<int, int>>& Friend, vector<b
             Selected[First] = true;
             Selected[Second] = true;
 
-            Solution(Count+2, i+1, Friend, Selected);
+            Solution(Count + 2, i + 1, Friend, Selected);
 
             Selected[First] = false;
             Selected[Second] = false;
@@ -48,7 +49,7 @@ int main()
         ans = 0;
 
         cin >> N >> M;
-        
+
         vector<pair<int, int>> Friend(M);
         vector<bool> Selected(N, false);
 
