@@ -144,11 +144,13 @@
     <ClInclude Include="2805_나무자르기.h" />
     <ClInclude Include="BOARDCOVER.h" />
     <ClInclude Include="BOGGLE.h" />
+    <ClInclude Include="CLOCKSYNC.h" />
     <ClInclude Include="FENCE.h" />
     <ClInclude Include="FESTIVAL.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="Nexto_1.h" />
     <ClInclude Include="PICNIC.h" />
+    <ClInclude Include="QUADTREE.h" />
     <ClInclude Include="Solution_104.h" />
     <ClInclude Include="Solution_105.h" />
     <ClInclude Include="Solution_108.h" />

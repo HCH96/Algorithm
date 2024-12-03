@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 #include <algorithm>
+#include <climits>
 
 using namespace std;
 
@@ -68,11 +69,11 @@ int Solution(const vector<int>& Fence, int left, int right)
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
-    cin >> C;
+	cin >> C;
 
     while (C--)
     {
@@ -87,8 +88,8 @@ int main()
 
         ans = Solution(Fence, 0, Fence.size() - 1);
 
-        cout << ans << endl;
-    }
+		cout << answer << "\n";
+	}
 
-    return 0;
+	return 0;
 }
