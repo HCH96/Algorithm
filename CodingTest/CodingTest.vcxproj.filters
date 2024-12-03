@@ -207,5 +207,12 @@
     <ClInclude Include="PICNIC.h">
       <Filter>알고스팟</Filter>
     </ClInclude>
+    <ClInclude Include="불량 사용자.h" />
+    <ClInclude Include="BOARDCOVER.h">
+      <Filter>알고스팟</Filter>
+    </ClInclude>
+    <ClInclude Include="FENCE.h">
+      <Filter>알고스팟</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -142,7 +142,9 @@
     <ClInclude Include="1197_최소 스패닝 트리.h" />
     <ClInclude Include="1922_네트워크 연결.h" />
     <ClInclude Include="2805_나무자르기.h" />
+    <ClInclude Include="BOARDCOVER.h" />
     <ClInclude Include="BOGGLE.h" />
+    <ClInclude Include="FENCE.h" />
     <ClInclude Include="FESTIVAL.h" />
     <ClInclude Include="Network.h" />
     <ClInclude Include="Nexto_1.h" />

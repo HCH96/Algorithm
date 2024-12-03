@@ -1,4 +1,5 @@
-ï»¿#include <iostream>
+#pragma once
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -14,8 +15,8 @@ int Solution(const vector<int>& Fence, int left, int right)
     int mid = (left + right) / 2;
 
     int lhs = Solution(Fence, left, mid);
-    int rhs = Solution(Fence, mid+1, right);
-    
+    int rhs = Solution(Fence, mid + 1, right);
+
     int ret = max(lhs, rhs);
 
     int ToLeft = mid;
@@ -28,8 +29,8 @@ int Solution(const vector<int>& Fence, int left, int right)
         int CurSize = Length * CurMinHeight;
 
         ret = max(ret, CurSize);
-        
-        // ì•„ì§ ì–‘ìª½ ëª¨ë‘ ë” ê°ˆ ìˆ˜ ìžˆëŠ” ê²½ìš°
+
+        // ¾ÆÁ÷ ¾çÂÊ ¸ðµÎ ´õ °¥ ¼ö ÀÖ´Â °æ¿ì
         if (ToLeft > left && ToRight < right)
         {
             if (Fence[ToLeft - 1] >= Fence[ToRight + 1])
@@ -43,7 +44,7 @@ int Solution(const vector<int>& Fence, int left, int right)
                 ++ToRight;
             }
         }
-        else if(ToLeft > left || ToRight < right)
+        else if (ToLeft > left || ToRight < right)
         {
             if (ToLeft > left)
             {
