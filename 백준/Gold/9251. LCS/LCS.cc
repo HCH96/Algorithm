@@ -41,11 +41,11 @@ int main()
 	{
 		for (int j = 1; j < s1.size(); ++j)
 		{
+
+			dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+
 			if (s1[j] == s2[i])
 				dp[i][j] = dp[i - 1][j - 1] + 1;
-			
-			dp[i][j] = max(dp[i - 1][j], dp[i][j]);
-			dp[i][j] = max(dp[i][j], dp[i][j - 1]);
 			
 		}
 	}
