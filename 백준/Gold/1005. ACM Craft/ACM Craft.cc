@@ -59,9 +59,9 @@ int main() {
 
             for (auto Next : Edge[Cur])
             {
-                if (Dist[Cur] + Time[Next] > Dist[Next])
+                Dist[Next] = max(Dist[Next], Dist[Cur] + Time[Next]);
+                if (--InDeg[Next] == 0)
                 {
-                    Dist[Next] = Dist[Cur] + Time[Next];
                     q.push(Next);
                 }
             }
