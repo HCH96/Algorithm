@@ -18,6 +18,7 @@ int main() {
     cin >> N;
 
     vector<vector<int>> v(N, vector<int>(3));
+    const int INF = 1e9;
 
     for (int i = 0; i < N; ++i)
     {
@@ -28,41 +29,33 @@ int main() {
         v[i][2] = B;
     }
 
-    vector<vector<vector<int>>> dp(3,vector<vector<int>>(N, vector<int>(3, 1000000009)));
-
-    for (int i = 0; i < 3; ++i)
-    {
-        for (int j = 0; j < 3; ++j)
-        {
-            if (i == j)
-                dp[i][0][j] = v[0][i];
-        }
-    }
-
-    for (int i = 0; i < 3; ++i)
-    {
-        for (int j = 1; j < N; ++j)
-        {
-            dp[i][j][0] = min(dp[i][j][0], dp[i][j - 1][1]+v[j][0]);
-            dp[i][j][0] = min(dp[i][j][0], dp[i][j - 1][2]+v[j][0]);
-            dp[i][j][1] = min(dp[i][j][1], dp[i][j - 1][0]+v[j][1]);
-            dp[i][j][1] = min(dp[i][j][1], dp[i][j - 1][2]+v[j][1]);
-            dp[i][j][2] = min(dp[i][j][2], dp[i][j - 1][0]+v[j][2]);
-            dp[i][j][2] = min(dp[i][j][2], dp[i][j - 1][1]+v[j][2]);
-        }
-    }
-
     int Answer = INT_MAX;
 
+
     for (int i = 0; i < 3; ++i)
     {
+        vector<int> Prev = { INF,INF,INF };
+        Prev[i] = v[0][i];
+
+        for (int j = 1; j < N; ++j)
+        {
+            vector<int> Cur(3);
+
+            Cur[0] = min(Prev[1], Prev[2]) + v[j][0];
+            Cur[1] = min(Prev[0], Prev[2]) + v[j][1];
+            Cur[2] = min(Prev[0], Prev[1]) + v[j][2];
+
+            Prev = Cur;
+        }
+
         for (int j = 0; j < 3; ++j)
         {
             if (i == j)
                 continue;
 
-            Answer = min(Answer, dp[i][N - 1][j]);
+            Answer = min(Answer, Prev[j]);
         }
+
     }
 
     cout << Answer;
