@@ -26,7 +26,7 @@ int Find(int CurNode)
     if (Parent[CurNode] == CurNode)
         return CurNode;
 
-    return Find(Parent[CurNode]);
+    return Parent[CurNode] = Find(Parent[CurNode]);
 }
 
 void Union(int u, int v)
