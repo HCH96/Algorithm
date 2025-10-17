@@ -20,21 +20,6 @@ int Find(int Cur)
     return Parent[Cur] = Find(Parent[Cur]);
 }
 
-bool Union(int x, int y)
-{
-    x = Find(x);
-    y = Find(y);
-
-    if (x == y)
-        return false;
-
-    if (x > y)
-        swap(x, y);
-    
-    Parent[y] = x;
-
-    return true;
-}
 
 int main() {
     ios::sync_with_stdio(false);
@@ -64,7 +49,8 @@ int main() {
             break;
         }
 
-        Union(Gate-1, t);
+        Parent[Gate] = Find(Gate - 1);
+
     }
 
     cout << Answer;
