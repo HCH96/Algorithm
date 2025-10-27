@@ -38,61 +38,45 @@ int main() {
         }
     }
 
-    // 0000000000000000
-    // {Dist, CurNode, Mask, StartNode}
-    priority_queue<vector<int>, vector<vector<int>>, cmp> pq;
-
-    // [Node,Mask] = Dist
-    vector<vector<int>> DistArr(N, vector<int>((1 << N), INT_MAX));
-
-    DistArr[0][1] = 0;
-    pq.push({ 0,0,1,0 });
-
     const int Finished = (1 << N) - 1;
     int Answer = INT_MAX;
 
+    // 0000000000000000
 
-    while (!pq.empty())
+    // [Node][Mask]
+    vector<vector<int>> dp(N, vector<int>((1 << N), INT_MAX));
+
+    // 시작 0번 노드
+    dp[0][1] = 0;
+
+    
+    for (int mask = 0; mask <= Finished; ++mask)
     {
-        vector<int> Cur = pq.top();
-        pq.pop();
-
-        int Dist = Cur[0];
-        int CurNode = Cur[1];
-        int Mask = Cur[2];
-        int StartNode = Cur[3];
-
-        if (DistArr[CurNode][Mask] != Dist)
-            continue;
-
-        if (Mask == Finished && Edge[CurNode][StartNode] != 0)
+        for (int node = 0; node < N; ++node)
         {
-            Answer = min(Answer, Dist + Edge[CurNode][StartNode]);
-            continue;
-        }
-
-        if (Mask == Finished) continue;
-
-        for (int Next = 0; Next < N; ++Next)
-        {
-            if (Edge[CurNode][Next] == 0 || (Mask & (1 << Next)) != 0)
-            {
+            if (dp[node][mask] == INT_MAX)
                 continue;
-            }
 
-            int NewMask = Mask | (1 << Next);
-            int NewDist = Dist + Edge[CurNode][Next];
-
-            if (Dist + Edge[CurNode][Next] < DistArr[Next][NewMask])
+            for (int next = 0; next < N; ++next)
             {
-                pq.push({ Dist + Edge[CurNode][Next], Next, NewMask, StartNode });
-                DistArr[Next][NewMask] = Dist + Edge[CurNode][Next];
+                if(mask & (1 << next) || Edge[node][next] == 0)
+					continue;
+
+                int nextMask = mask | (1 << next);
+				dp[next][nextMask] = min(dp[next][nextMask], dp[node][mask] + Edge[node][next]);
             }
         }
     }
+    
+    for (int i = 0; i < N; ++i)
+	{
+		if (dp[i][Finished] ==INT_MAX || Edge[i][0] == 0)
+			continue;
+
+		Answer = min(Answer, dp[i][Finished] + Edge[i][0]);
+	}
 
     cout << Answer;
-
 
     return 0;
 }
