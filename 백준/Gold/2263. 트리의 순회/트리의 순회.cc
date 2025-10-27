@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include <unordered_map>
 
 using namespace std;
 
@@ -7,25 +8,24 @@ int T, N, M, K, W, R, Q, S, G, P;
 
 int dir[4][2] = { {0,1}, {0,-1}, {1,0}, {-1,0} };
 
-int CurIdx = 0;
+vector<int> inorder(N);
+vector<int> postorder(N);
+unordered_map<int, int> Idx;
 
-stack<int> st;
-
-
-void Sol(vector<int>& InOrder, vector<int>& PostOrder, int Left, int Right)
+void Sol(int InLeft, int InRight, int PostLeft, int PostRight)
 {
-    if (Left > Right)
+    if (InLeft > InRight || PostLeft > PostRight)
         return;
 
-    int RootValue = PostOrder[CurIdx--];
-    
-    
-    int RootIdx = find(InOrder.begin() + Left, InOrder.begin() + Right + 1, RootValue) - InOrder.begin();
+    int RootValue = postorder[PostRight];
+    int RootIdx = Idx[RootValue];
 
-    Sol(InOrder, PostOrder, RootIdx + 1, Right);
-    Sol(InOrder, PostOrder, Left, RootIdx - 1);
+    cout << RootValue << " ";
 
-    st.push(RootValue);
+    int LeftSubtreeSize = RootIdx - InLeft;
+
+    Sol(InLeft,RootIdx-1,PostLeft, PostLeft + LeftSubtreeSize - 1);
+    Sol(RootIdx +1, InRight, PostLeft + LeftSubtreeSize, PostRight - 1);
 }
 
 
@@ -35,8 +35,10 @@ int main() {
 
     cin >> N;
 
-    vector<int> inorder(N);
-    vector<int> postorder(N);
+
+    inorder.resize(N);
+    postorder.resize(N);
+
 
     for (int i = 0; i < N; ++i)
     {
@@ -44,19 +46,18 @@ int main() {
     }
 
     for (int i = 0; i < N; ++i)
-    {
+    {   
         cin >> postorder[i];
     }
 
-    CurIdx = N - 1;
-    
-    Sol(inorder, postorder, 0, N - 1);
 
-    while(!st.empty())
+    for (int i = 0; i < N; ++i)
     {
-		cout << st.top() << " ";
-		st.pop();
-	}
+        Idx[inorder[i]] = i;
+    }
+
+    Sol(0, N - 1, 0, N - 1);
+
 
     return 0;
 }
