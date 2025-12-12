@@ -12,11 +12,11 @@ int T, h, w;
 
 int Diff[4][2] = { {1,0},{-1,0},{0,1},{0,-1} };
 
-bool BFS(vector<vector<char>>& Grid, unordered_map<char, bool>& keys, int& Answer)
+void BFS(vector<vector<char>>& Grid, unordered_map<char, bool>& keys, int& Answer)
 {
     queue<pair<int, int>> q;
     vector<vector<bool>> visited(h + 2, vector<bool>(w + 2, false));
-    bool flag = false;
+    vector<pair<int, int>> waiting[26];
 
     q.push({ 0,0 });
     visited[0][0] = true;
@@ -41,14 +41,30 @@ bool BFS(vector<vector<char>>& Grid, unordered_map<char, bool>& keys, int& Answe
             {
                 keys[toupper(NextChar)] = true;
                 Grid[NextRow][NextCol] = '.';
-                flag = true;
                 q.push({ NextRow,NextCol });
                 visited[NextRow][NextCol] = true;
+
+                for (auto it : waiting[NextChar - 'a'])
+                {
+                    Grid[it.first][it.second] = '.';
+                    q.push({ it.first,it.second });
+                    visited[it.first][it.second] = true;
+                }
+                waiting[NextChar - 'a'].clear();
+
             }
-            else if (NextChar >= 'A' && NextChar <= 'Z' && keys[NextChar] == true)
+            else if (NextChar >= 'A' && NextChar <= 'Z')
             {
-                q.push({ NextRow,NextCol });
-                visited[NextRow][NextCol] = true;
+                if (keys[NextChar] == true)
+                {
+                    Grid[NextRow][NextCol] = '.';
+                    q.push({ NextRow,NextCol });
+                    visited[NextRow][NextCol] = true;
+                }
+                else
+                {
+                    waiting[NextChar-'A'].push_back({NextRow,NextCol});
+                }
             }
             else if (NextChar == '.')
             {
@@ -64,8 +80,6 @@ bool BFS(vector<vector<char>>& Grid, unordered_map<char, bool>& keys, int& Answe
             }
         }
     }
-
-    return flag;
 }
 
 
@@ -103,11 +117,7 @@ int main() {
             }
         }
 
-        bool Flag = true;
-        while (Flag)
-        {
-            Flag = BFS(Grid, keys, Answer);
-        }
+        BFS(Grid, keys, Answer);
 
         cout << Answer << endl;
 
