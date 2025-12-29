@@ -96,11 +96,13 @@ int main() {
 
     if (Flag)
     {
+        cout << "1\n";
+
         for (int i = 0; i < N; ++i)
         {
             for (int j = 0; j < N; ++j)
             {
-                cout << v[i][j] << " ";
+                cout << v[i][j];
             }
             cout << endl;
         }
