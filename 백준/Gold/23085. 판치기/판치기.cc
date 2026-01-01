@@ -27,16 +27,16 @@ int main() {
             ++tail;
     }
 
-    vector<vector<bool>> visited(Size+1, vector<bool>(Size+1, false));
+    vector<bool> visited(Size+1);
 
-    visited[head][tail] = true;
+    visited[head] = true;
     queue<vector<int>> q;
-    q.push({ head,tail,0 });
+    q.push({ head ,0 });
     while (!q.empty())
     {
         int CurHead = q.front()[0];
-        int CurTail = q.front()[1];
-        int CurCount = q.front()[2];
+        int CurTail = Size - CurHead;
+        int CurCount = q.front()[1];
         q.pop();
 
         if (CurHead == 0 && CurTail == Size)
@@ -59,10 +59,10 @@ int main() {
             if (NextHead<0 || NextHead >Size || NextTail<0 || NextTail >Size)
                 continue;
 
-            if (visited[NextHead][NextTail] == false)
+            if (visited[NextHead] == false)
             {
-                visited[NextHead][NextTail] = true;
-                q.push({ NextHead ,NextTail ,CurCount + 1 });
+                visited[NextHead] = true;
+                q.push({ NextHead ,CurCount + 1 });
             }
         }
 
